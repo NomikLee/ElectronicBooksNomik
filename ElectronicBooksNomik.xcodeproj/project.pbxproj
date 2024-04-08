@@ -14,6 +14,9 @@
 		6F7E0E5F2BC3B2FC00404888 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6F7E0E5E2BC3B2FC00404888 /* Base */; };
 		6F7E0E672BC3B58E00404888 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E0E662BC3B58E00404888 /* MainTabViewController.swift */; };
 		6F7E0E692BC3B67500404888 /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E0E682BC3B67500404888 /* CardListViewController.swift */; };
+		6F7E0E6C2BC3CCB900404888 /* MainCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E0E6B2BC3CCB900404888 /* MainCardTableViewCell.swift */; };
+		6F7E0E6F2BC3D83D00404888 /* CardsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E0E6E2BC3D83D00404888 /* CardsData.swift */; };
+		6F7E0E722BC3D91D00404888 /* CardsViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E0E712BC3D91D00404888 /* CardsViewModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		6F7E0E602BC3B2FC00404888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F7E0E662BC3B58E00404888 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		6F7E0E682BC3B67500404888 /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
+		6F7E0E6B2BC3CCB900404888 /* MainCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardTableViewCell.swift; sourceTree = "<group>"; };
+		6F7E0E6E2BC3D83D00404888 /* CardsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsData.swift; sourceTree = "<group>"; };
+		6F7E0E712BC3D91D00404888 /* CardsViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,43 @@
 		6F7E0E512BC3B2FB00404888 /* ElectronicBooksNomik */ = {
 			isa = PBXGroup;
 			children = (
-				6F7E0E522BC3B2FB00404888 /* AppDelegate.swift */,
-				6F7E0E542BC3B2FB00404888 /* SceneDelegate.swift */,
+				6F7E0E702BC3D8E800404888 /* ViewModels */,
+				6F7E0E6D2BC3D6D200404888 /* Models */,
+				6F7E0E6A2BC3CC6B00404888 /* Supporting */,
 				6F7E0E662BC3B58E00404888 /* MainTabViewController.swift */,
 				6F7E0E562BC3B2FB00404888 /* MainViewController.swift */,
 				6F7E0E682BC3B67500404888 /* CardListViewController.swift */,
-				6F7E0E5B2BC3B2FC00404888 /* Assets.xcassets */,
-				6F7E0E5D2BC3B2FC00404888 /* LaunchScreen.storyboard */,
+				6F7E0E6B2BC3CCB900404888 /* MainCardTableViewCell.swift */,
 				6F7E0E602BC3B2FC00404888 /* Info.plist */,
 			);
 			path = ElectronicBooksNomik;
+			sourceTree = "<group>";
+		};
+		6F7E0E6A2BC3CC6B00404888 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E0E522BC3B2FB00404888 /* AppDelegate.swift */,
+				6F7E0E542BC3B2FB00404888 /* SceneDelegate.swift */,
+				6F7E0E5B2BC3B2FC00404888 /* Assets.xcassets */,
+				6F7E0E5D2BC3B2FC00404888 /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		6F7E0E6D2BC3D6D200404888 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E0E6E2BC3D83D00404888 /* CardsData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F7E0E702BC3D8E800404888 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E0E712BC3D91D00404888 /* CardsViewModels.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +175,12 @@
 			files = (
 				6F7E0E572BC3B2FB00404888 /* MainViewController.swift in Sources */,
 				6F7E0E672BC3B58E00404888 /* MainTabViewController.swift in Sources */,
+				6F7E0E6C2BC3CCB900404888 /* MainCardTableViewCell.swift in Sources */,
 				6F7E0E532BC3B2FB00404888 /* AppDelegate.swift in Sources */,
+				6F7E0E722BC3D91D00404888 /* CardsViewModels.swift in Sources */,
 				6F7E0E552BC3B2FB00404888 /* SceneDelegate.swift in Sources */,
 				6F7E0E692BC3B67500404888 /* CardListViewController.swift in Sources */,
+				6F7E0E6F2BC3D83D00404888 /* CardsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

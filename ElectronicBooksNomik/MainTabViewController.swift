@@ -36,7 +36,7 @@ class MainTabViewController: UITabBarController {
 
 }
 
-#Preview("mainVC", body: {
-    MainTabViewController()
-})
+//#Preview("mainVC", body: {
+//    MainTabViewController()
+//})
 
