@@ -11,12 +11,13 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemFill
+        view.backgroundColor = .systemBackground
+        title = "雷諾曼卡"
     }
 
 }
 
 #Preview("mainVC", body: {
-    MainViewController()
+    MainTabViewController()
 })
 
