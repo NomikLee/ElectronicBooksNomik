@@ -64,13 +64,11 @@
 		6F7E0E512BC3B2FB00404888 /* ElectronicBooksNomik */ = {
 			isa = PBXGroup;
 			children = (
-				6F7E0E702BC3D8E800404888 /* ViewModels */,
 				6F7E0E6D2BC3D6D200404888 /* Models */,
+				6F7E0E742BC3FDEF00404888 /* Views */,
+				6F7E0E702BC3D8E800404888 /* ViewModels */,
+				6F7E0E732BC3FD4700404888 /* Controllers */,
 				6F7E0E6A2BC3CC6B00404888 /* Supporting */,
-				6F7E0E662BC3B58E00404888 /* MainTabViewController.swift */,
-				6F7E0E562BC3B2FB00404888 /* MainViewController.swift */,
-				6F7E0E682BC3B67500404888 /* CardListViewController.swift */,
-				6F7E0E6B2BC3CCB900404888 /* MainCardTableViewCell.swift */,
 				6F7E0E602BC3B2FC00404888 /* Info.plist */,
 			);
 			path = ElectronicBooksNomik;
@@ -101,6 +99,24 @@
 				6F7E0E712BC3D91D00404888 /* CardsViewModels.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6F7E0E732BC3FD4700404888 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E0E562BC3B2FB00404888 /* MainViewController.swift */,
+				6F7E0E662BC3B58E00404888 /* MainTabViewController.swift */,
+				6F7E0E682BC3B67500404888 /* CardListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6F7E0E742BC3FDEF00404888 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E0E6B2BC3CCB900404888 /* MainCardTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

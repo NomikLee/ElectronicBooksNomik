@@ -9,11 +9,14 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    var cardsviewModel = CardsViewModels()
+    
     private let mainCardTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .systemBackground
         tableView.register(MainCardTableViewCell.self, forCellReuseIdentifier: MainCardTableViewCell.idenfier)
+        tableView.separatorStyle = .none
         return tableView
     }()
 
@@ -43,7 +46,7 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return cardsviewModel.cardDatas.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,11 +54,12 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.textLabel?.text = indexPath.row.description
+        let cardData = cardsviewModel.cardDatas[indexPath.row]
+        cell.configure(with: cardData.cardImage, and: cardData.cardDescribe)
+        cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
         
         return cell
     }
-    
     
 }
 
