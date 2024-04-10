@@ -14,7 +14,7 @@ class MainCardTableViewCell: UITableViewCell {
     private let cardImageView: UIImageView = {
         let iv = UIImageView()
         iv.translatesAutoresizingMaskIntoConstraints = false
-        iv.contentMode = .scaleAspectFit
+        iv.contentMode = .scaleAspectFill
         iv.image = UIImage(systemName: "questionmark")
         iv.tintColor = .label
         return iv
@@ -23,10 +23,11 @@ class MainCardTableViewCell: UITableViewCell {
     private let cardLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .label
+        label.textColor = .secondaryLabel
         label.textAlignment = .left
         label.font = .systemFont(ofSize: 24, weight: .medium)
         label.text = "hooo"
+        label.numberOfLines = 0
         return label
     }()
         
@@ -54,12 +55,11 @@ class MainCardTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             cardImageView.topAnchor.constraint(equalTo: contentView.layoutMarginsGuide.topAnchor),
             cardImageView.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor),
-//            cardImageView.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor),
-            cardImageView.centerXAnchor.constraint(equalTo: contentView.layoutMarginsGuide.centerXAnchor),
-            cardImageView.heightAnchor.constraint(equalToConstant: 90),
+            cardImageView.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor, constant: 60),
+            cardImageView.heightAnchor.constraint(equalToConstant: 150),
             cardImageView.widthAnchor.constraint(equalToConstant: 90),
             
-            cardLabel.leadingAnchor.constraint(equalTo: cardImageView.trailingAnchor, constant: 16),
+            cardLabel.leadingAnchor.constraint(equalTo: cardImageView.trailingAnchor, constant: 60),
             cardLabel.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor, constant: -12),
             cardLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
             cardLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
@@ -69,6 +69,4 @@ class MainCardTableViewCell: UITableViewCell {
     }
 }
 
-#Preview("mainVC", body: {
-    MainTabViewController()
-})
+

@@ -17,6 +17,8 @@
 		6F7E0E6C2BC3CCB900404888 /* MainCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E0E6B2BC3CCB900404888 /* MainCardTableViewCell.swift */; };
 		6F7E0E6F2BC3D83D00404888 /* CardsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E0E6E2BC3D83D00404888 /* CardsData.swift */; };
 		6F7E0E722BC3D91D00404888 /* CardsViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E0E712BC3D91D00404888 /* CardsViewModels.swift */; };
+		6F7E0E762BC66AB800404888 /* MainViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E0E752BC66AB800404888 /* MainViewHeaderView.swift */; };
+		6F7E0E782BC676BB00404888 /* NavAppearence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E0E772BC676BB00404888 /* NavAppearence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		6F7E0E6B2BC3CCB900404888 /* MainCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardTableViewCell.swift; sourceTree = "<group>"; };
 		6F7E0E6E2BC3D83D00404888 /* CardsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsData.swift; sourceTree = "<group>"; };
 		6F7E0E712BC3D91D00404888 /* CardsViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModels.swift; sourceTree = "<group>"; };
+		6F7E0E752BC66AB800404888 /* MainViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewHeaderView.swift; sourceTree = "<group>"; };
+		6F7E0E772BC676BB00404888 /* NavAppearence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavAppearence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				6F7E0E542BC3B2FB00404888 /* SceneDelegate.swift */,
 				6F7E0E5B2BC3B2FC00404888 /* Assets.xcassets */,
 				6F7E0E5D2BC3B2FC00404888 /* LaunchScreen.storyboard */,
+				6F7E0E772BC676BB00404888 /* NavAppearence.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -104,8 +109,8 @@
 		6F7E0E732BC3FD4700404888 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6F7E0E562BC3B2FB00404888 /* MainViewController.swift */,
 				6F7E0E662BC3B58E00404888 /* MainTabViewController.swift */,
+				6F7E0E562BC3B2FB00404888 /* MainViewController.swift */,
 				6F7E0E682BC3B67500404888 /* CardListViewController.swift */,
 			);
 			path = Controllers;
@@ -115,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				6F7E0E6B2BC3CCB900404888 /* MainCardTableViewCell.swift */,
+				6F7E0E752BC66AB800404888 /* MainViewHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,11 +198,13 @@
 				6F7E0E572BC3B2FB00404888 /* MainViewController.swift in Sources */,
 				6F7E0E672BC3B58E00404888 /* MainTabViewController.swift in Sources */,
 				6F7E0E6C2BC3CCB900404888 /* MainCardTableViewCell.swift in Sources */,
+				6F7E0E782BC676BB00404888 /* NavAppearence.swift in Sources */,
 				6F7E0E532BC3B2FB00404888 /* AppDelegate.swift in Sources */,
 				6F7E0E722BC3D91D00404888 /* CardsViewModels.swift in Sources */,
 				6F7E0E552BC3B2FB00404888 /* SceneDelegate.swift in Sources */,
 				6F7E0E692BC3B67500404888 /* CardListViewController.swift in Sources */,
 				6F7E0E6F2BC3D83D00404888 /* CardsData.swift in Sources */,
+				6F7E0E762BC66AB800404888 /* MainViewHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

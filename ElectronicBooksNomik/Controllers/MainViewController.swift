@@ -23,7 +23,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "雷諾曼卡"
+        title = "雷諾曼牌義"
+        
+        let mainViewHeaderView = MainViewHeaderView(frame: CGRect(x: 0, y: 0, width: 0, height: 255))
+        mainCardTableView.tableHeaderView = mainViewHeaderView
         
         mainCardTableView.delegate = self
         mainCardTableView.dataSource = self
@@ -57,6 +60,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         let cardData = cardsviewModel.cardDatas[indexPath.row]
         cell.configure(with: cardData.cardImage, and: cardData.cardDescribe)
         cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
+        cell.accessoryType = .disclosureIndicator
         
         return cell
     }

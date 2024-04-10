@@ -21,10 +21,14 @@ class MainTabViewController: UITabBarController {
         let nav1 = UINavigationController(rootViewController: vc1)
         let nav2 = UINavigationController(rootViewController: vc2)
         
+        nav1.setupNavBarColor()
+        nav2.setupNavBarColor()
+        
         nav1.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "house.circle"), selectedImage: UIImage(systemName: "house.circle.fill"))
         nav2.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "list.clipboard"), selectedImage: UIImage(systemName: "list.clipboard.fill"))
         
         UITabBar.appearance().tintColor = .systemPink
+        UITabBar.appearance().backgroundColor = .systemFill
         
         for nav in [nav1, nav2] {
             nav.navigationBar.prefersLargeTitles = true
@@ -36,7 +40,7 @@ class MainTabViewController: UITabBarController {
 
 }
 
-//#Preview("mainVC", body: {
-//    MainTabViewController()
-//})
+#Preview("mainVC", body: {
+    MainTabViewController()
+})
 
